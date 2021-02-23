@@ -1,0 +1,129 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/fdhuang/clone/guava/guava/src/com/google/common/eventbus/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/d532b5c/
+AllowConcurrentEvents	AllowConcurrentEvents.java	/^public @interface AllowConcurrentEvents {}$/;"	annotation	line:35	language:Java
+AsyncEventBus	AsyncEventBus.java	/^  public AsyncEventBus(Executor executor) {$/;"	method	line:61	language:Java	class:AsyncEventBus	access:public
+AsyncEventBus	AsyncEventBus.java	/^  public AsyncEventBus(Executor executor, SubscriberExceptionHandler subscriberExceptionHandler)/;"	method	line:51	language:Java	class:AsyncEventBus	access:public
+AsyncEventBus	AsyncEventBus.java	/^  public AsyncEventBus(String identifier, Executor executor) {$/;"	method	line:38	language:Java	class:AsyncEventBus	access:public
+AsyncEventBus	AsyncEventBus.java	/^public class AsyncEventBus extends EventBus {$/;"	class	line:28	language:Java	inherits:EventBus
+DeadEvent	DeadEvent.java	/^  public DeadEvent(Object source, Object event) {$/;"	method	line:43	language:Java	class:DeadEvent	access:public
+DeadEvent	DeadEvent.java	/^public class DeadEvent {$/;"	class	line:32	language:Java
+Dispatcher	Dispatcher.java	/^abstract class Dispatcher {$/;"	class	line:34	language:Java
+Event	Dispatcher.java	/^      private Event(Object event, Iterator<Subscriber> subscribers) {$/;"	method	line:122	language:Java	class:Dispatcher.PerThreadQueuedDispatcher.Event	file:	access:private
+Event	Dispatcher.java	/^    private static final class Event {$/;"	class	line:118	language:Java	class:Dispatcher.PerThreadQueuedDispatcher	access:private
+EventBus	EventBus.java	/^  EventBus($/;"	method	line:140	language:Java	class:EventBus	access:default
+EventBus	EventBus.java	/^  public EventBus() {$/;"	method	line:108	language:Java	class:EventBus	access:public
+EventBus	EventBus.java	/^  public EventBus(String identifier) {$/;"	method	line:118	language:Java	class:EventBus	access:public
+EventBus	EventBus.java	/^  public EventBus(SubscriberExceptionHandler exceptionHandler) {$/;"	method	line:132	language:Java	class:EventBus	access:public
+EventBus	EventBus.java	/^public class EventBus {$/;"	class	line:96	language:Java
+EventWithSubscriber	Dispatcher.java	/^      private EventWithSubscriber(Object event, Subscriber subscriber) {$/;"	method	line:171	language:Java	class:Dispatcher.LegacyAsyncDispatcher.EventWithSubscriber	file:	access:private
+EventWithSubscriber	Dispatcher.java	/^    private static final class EventWithSubscriber {$/;"	class	line:167	language:Java	class:Dispatcher.LegacyAsyncDispatcher	access:private
+INSTANCE	Dispatcher.java	/^    private static final ImmediateDispatcher INSTANCE = new ImmediateDispatcher();$/;"	field	line:180	language:Java	class:Dispatcher.ImmediateDispatcher	file:	access:private
+INSTANCE	EventBus.java	/^    static final LoggingHandler INSTANCE = new LoggingHandler();$/;"	field	line:226	language:Java	class:EventBus.LoggingHandler	access:default
+ImmediateDispatcher	Dispatcher.java	/^  private static final class ImmediateDispatcher extends Dispatcher {$/;"	class	line:179	language:Java	class:Dispatcher	inherits:Dispatcher	access:private
+LegacyAsyncDispatcher	Dispatcher.java	/^  private static final class LegacyAsyncDispatcher extends Dispatcher {$/;"	class	line:130	language:Java	class:Dispatcher	inherits:Dispatcher	access:private
+LoggingHandler	EventBus.java	/^  static final class LoggingHandler implements SubscriberExceptionHandler {$/;"	class	line:225	language:Java	class:EventBus	inherits:SubscriberExceptionHandler	access:default
+MethodIdentifier	SubscriberRegistry.java	/^    MethodIdentifier(Method method) {$/;"	method	line:250	language:Java	class:SubscriberRegistry.MethodIdentifier	access:default
+MethodIdentifier	SubscriberRegistry.java	/^  private static final class MethodIdentifier {$/;"	class	line:245	language:Java	class:SubscriberRegistry	access:private
+PerThreadQueuedDispatcher	Dispatcher.java	/^  private static final class PerThreadQueuedDispatcher extends Dispatcher {$/;"	class	line:73	language:Java	class:Dispatcher	inherits:Dispatcher	access:private
+Subscribe	Subscribe.java	/^public @interface Subscribe {}$/;"	annotation	line:40	language:Java
+Subscriber	Subscriber.java	/^  private Subscriber(EventBus bus, Object target, Method method) {$/;"	method	line:56	language:Java	class:Subscriber	file:	access:private
+Subscriber	Subscriber.java	/^class Subscriber {$/;"	class	line:35	language:Java
+SubscriberExceptionContext	SubscriberExceptionContext.java	/^  SubscriberExceptionContext($/;"	method	line:39	language:Java	class:SubscriberExceptionContext	access:default
+SubscriberExceptionContext	SubscriberExceptionContext.java	/^public class SubscriberExceptionContext {$/;"	class	line:26	language:Java
+SubscriberExceptionHandler	SubscriberExceptionHandler.java	/^public interface SubscriberExceptionHandler {$/;"	interface	line:22	language:Java
+SubscriberRegistry	SubscriberRegistry.java	/^  SubscriberRegistry(EventBus bus) {$/;"	method	line:70	language:Java	class:SubscriberRegistry	access:default
+SubscriberRegistry	SubscriberRegistry.java	/^final class SubscriberRegistry {$/;"	class	line:56	language:Java
+SynchronizedSubscriber	Subscriber.java	/^    private SynchronizedSubscriber(EventBus bus, Object target, Method method) {$/;"	method	line:137	language:Java	class:Subscriber.SynchronizedSubscriber	file:	access:private
+SynchronizedSubscriber	Subscriber.java	/^  static final class SynchronizedSubscriber extends Subscriber {$/;"	class	line:135	language:Java	class:Subscriber	inherits:Subscriber	access:default
+bus	Subscriber.java	/^  @Weak private EventBus bus;$/;"	field	line:45	language:Java	class:Subscriber	file:	access:private
+bus	SubscriberRegistry.java	/^  @Weak private final EventBus bus;$/;"	field	line:68	language:Java	class:SubscriberRegistry	file:	access:private
+com.google.common.eventbus	AllowConcurrentEvents.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	AsyncEventBus.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	DeadEvent.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	Dispatcher.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	EventBus.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	Subscribe.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	Subscriber.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	SubscriberExceptionContext.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	SubscriberExceptionHandler.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	SubscriberRegistry.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+com.google.common.eventbus	package-info.java	/^package com.google.common.eventbus;$/;"	package	line:254	language:Java
+context	Subscriber.java	/^  private SubscriberExceptionContext context(Object event) {$/;"	method	line:101	language:Java	class:Subscriber	file:	access:private
+create	Subscriber.java	/^  static Subscriber create(EventBus bus, Object listener, Method method) {$/;"	method	line:38	language:Java	class:Subscriber	access:default
+dispatch	Dispatcher.java	/^    void dispatch(Object event, Iterator<Subscriber> subscribers) {$/;"	method	line:155	language:Java	class:Dispatcher.LegacyAsyncDispatcher	access:default
+dispatch	Dispatcher.java	/^    void dispatch(Object event, Iterator<Subscriber> subscribers) {$/;"	method	line:183	language:Java	class:Dispatcher.ImmediateDispatcher	access:default
+dispatch	Dispatcher.java	/^    void dispatch(Object event, Iterator<Subscriber> subscribers) {$/;"	method	line:96	language:Java	class:Dispatcher.PerThreadQueuedDispatcher	access:default
+dispatch	Dispatcher.java	/^  abstract void dispatch(Object event, Iterator<Subscriber> subscribers);$/;"	method	line:70	language:Java	class:Dispatcher	access:default
+dispatchEvent	Subscriber.java	/^  final void dispatchEvent(final Object event) {$/;"	method	line:66	language:Java	class:Subscriber	access:default
+dispatcher	EventBus.java	/^  private final Dispatcher dispatcher;$/;"	field	line:105	language:Java	class:EventBus	file:	access:private
+dispatching	Dispatcher.java	/^    private final ThreadLocal<Boolean> dispatching =$/;"	field	line:87	language:Java	class:Dispatcher.PerThreadQueuedDispatcher	file:	access:private
+equals	Subscriber.java	/^  public final boolean equals(@Nullable Object obj) {$/;"	method	line:111	language:Java	class:Subscriber	access:public
+equals	SubscriberRegistry.java	/^    public boolean equals(@Nullable Object o) {$/;"	method	line:261	language:Java	class:SubscriberRegistry.MethodIdentifier	access:public
+event	DeadEvent.java	/^  private final Object event;$/;"	field	line:35	language:Java	class:DeadEvent	file:	access:private
+event	Dispatcher.java	/^      private final Object event;$/;"	field	line:119	language:Java	class:Dispatcher.PerThreadQueuedDispatcher.Event	file:	access:private
+event	Dispatcher.java	/^      private final Object event;$/;"	field	line:168	language:Java	class:Dispatcher.LegacyAsyncDispatcher.EventWithSubscriber	file:	access:private
+event	SubscriberExceptionContext.java	/^  private final Object event;$/;"	field	line:28	language:Java	class:SubscriberExceptionContext	file:	access:private
+eventBus	SubscriberExceptionContext.java	/^  private final EventBus eventBus;$/;"	field	line:27	language:Java	class:SubscriberExceptionContext	file:	access:private
+exceptionHandler	EventBus.java	/^  private final SubscriberExceptionHandler exceptionHandler;$/;"	field	line:102	language:Java	class:EventBus	file:	access:private
+executor	EventBus.java	/^  final Executor executor() {$/;"	method	line:161	language:Java	class:EventBus	access:default
+executor	EventBus.java	/^  private final Executor executor;$/;"	field	line:101	language:Java	class:EventBus	file:	access:private
+executor	Subscriber.java	/^  private final Executor executor;$/;"	field	line:54	language:Java	class:Subscriber	file:	access:private
+findAllSubscribers	SubscriberRegistry.java	/^  private Multimap<Class<?>, Subscriber> findAllSubscribers(Object listener) {$/;"	method	line:163	language:Java	class:SubscriberRegistry	file:	access:private
+flattenHierarchy	SubscriberRegistry.java	/^  static ImmutableSet<Class<?>> flattenHierarchy(Class<?> concreteClass) {$/;"	method	line:237	language:Java	class:SubscriberRegistry	access:default
+flattenHierarchyCache	SubscriberRegistry.java	/^  private static final LoadingCache<Class<?>, ImmutableSet<Class<?>>> flattenHierarchyCache =$/;"	field	line:218	language:Java	class:SubscriberRegistry	file:	access:private
+getAnnotatedMethods	SubscriberRegistry.java	/^  private static ImmutableList<Method> getAnnotatedMethods(Class<?> clazz) {$/;"	method	line:174	language:Java	class:SubscriberRegistry	file:	access:private
+getAnnotatedMethodsNotCached	SubscriberRegistry.java	/^  private static ImmutableList<Method> getAnnotatedMethodsNotCached(Class<?> clazz) {$/;"	method	line:183	language:Java	class:SubscriberRegistry	file:	access:private
+getEvent	DeadEvent.java	/^  public Object getEvent() {$/;"	method	line:64	language:Java	class:DeadEvent	access:public
+getEvent	SubscriberExceptionContext.java	/^  public Object getEvent() {$/;"	method	line:56	language:Java	class:SubscriberExceptionContext	access:public
+getEventBus	SubscriberExceptionContext.java	/^  public EventBus getEventBus() {$/;"	method	line:51	language:Java	class:SubscriberExceptionContext	access:public
+getSource	DeadEvent.java	/^  public Object getSource() {$/;"	method	line:54	language:Java	class:DeadEvent	access:public
+getSubscriber	SubscriberExceptionContext.java	/^  public Object getSubscriber() {$/;"	method	line:61	language:Java	class:SubscriberExceptionContext	access:public
+getSubscriberMethod	SubscriberExceptionContext.java	/^  public Method getSubscriberMethod() {$/;"	method	line:66	language:Java	class:SubscriberExceptionContext	access:public
+getSubscribers	SubscriberRegistry.java	/^  Iterator<Subscriber> getSubscribers(Object event) {$/;"	method	line:126	language:Java	class:SubscriberRegistry	access:default
+getSubscribersForTesting	SubscriberRegistry.java	/^  Set<Subscriber> getSubscribersForTesting(Class<?> eventType) {$/;"	method	line:118	language:Java	class:SubscriberRegistry	access:default
+handleException	EventBus.java	/^    public void handleException(Throwable exception, SubscriberExceptionContext context) {$/;"	method	line:229	language:Java	class:EventBus.LoggingHandler	access:public
+handleException	SubscriberExceptionHandler.java	/^  void handleException(Throwable exception, SubscriberExceptionContext context);$/;"	method	line:24	language:Java	interface:SubscriberExceptionHandler	access:public
+handleSubscriberException	EventBus.java	/^  void handleSubscriberException(Throwable e, SubscriberExceptionContext context) {$/;"	method	line:166	language:Java	class:EventBus	access:default
+hashCode	Subscriber.java	/^  public final int hashCode() {$/;"	method	line:106	language:Java	class:Subscriber	access:public
+hashCode	SubscriberRegistry.java	/^    public int hashCode() {$/;"	method	line:256	language:Java	class:SubscriberRegistry.MethodIdentifier	access:public
+identifier	EventBus.java	/^  private final String identifier;$/;"	field	line:100	language:Java	class:EventBus	file:	access:private
+identifier	EventBus.java	/^  public final String identifier() {$/;"	method	line:156	language:Java	class:EventBus	access:public
+immediate	Dispatcher.java	/^  static Dispatcher immediate() {$/;"	method	line:65	language:Java	class:Dispatcher	access:default
+invokeSubscriberMethod	Subscriber.java	/^    void invokeSubscriberMethod(Object event) throws InvocationTargetException {$/;"	method	line:142	language:Java	class:Subscriber.SynchronizedSubscriber	access:default
+invokeSubscriberMethod	Subscriber.java	/^  void invokeSubscriberMethod(Object event) throws InvocationTargetException {$/;"	method	line:85	language:Java	class:Subscriber	access:default
+isDeclaredThreadSafe	Subscriber.java	/^  private static boolean isDeclaredThreadSafe(Method method) {$/;"	method	line:126	language:Java	class:Subscriber	file:	access:private
+legacyAsync	Dispatcher.java	/^  static Dispatcher legacyAsync() {$/;"	method	line:56	language:Java	class:Dispatcher	access:default
+logger	EventBus.java	/^    private static Logger logger(SubscriberExceptionContext context) {$/;"	method	line:236	language:Java	class:EventBus.LoggingHandler	file:	access:private
+logger	EventBus.java	/^  private static final Logger logger = Logger.getLogger(EventBus.class.getName());$/;"	field	line:98	language:Java	class:EventBus	file:	access:private
+message	EventBus.java	/^    private static String message(SubscriberExceptionContext context) {$/;"	method	line:240	language:Java	class:EventBus.LoggingHandler	file:	access:private
+method	Subscriber.java	/^  private final Method method;$/;"	field	line:51	language:Java	class:Subscriber	file:	access:private
+name	SubscriberRegistry.java	/^    private final String name;$/;"	field	line:247	language:Java	class:SubscriberRegistry.MethodIdentifier	file:	access:private
+parameterTypes	SubscriberRegistry.java	/^    private final List<Class<?>> parameterTypes;$/;"	field	line:248	language:Java	class:SubscriberRegistry.MethodIdentifier	file:	access:private
+perThreadDispatchQueue	Dispatcher.java	/^  static Dispatcher perThreadDispatchQueue() {$/;"	method	line:46	language:Java	class:Dispatcher	access:default
+post	EventBus.java	/^  public void post(Object event) {$/;"	method	line:209	language:Java	class:EventBus	access:public
+queue	Dispatcher.java	/^    private final ConcurrentLinkedQueue<EventWithSubscriber> queue =$/;"	field	line:151	language:Java	class:Dispatcher.LegacyAsyncDispatcher	file:	access:private
+queue	Dispatcher.java	/^    private final ThreadLocal<Queue<Event>> queue =$/;"	field	line:78	language:Java	class:Dispatcher.PerThreadQueuedDispatcher	file:	access:private
+register	EventBus.java	/^  public void register(Object object) {$/;"	method	line:185	language:Java	class:EventBus	access:public
+register	SubscriberRegistry.java	/^  void register(Object listener) {$/;"	method	line:75	language:Java	class:SubscriberRegistry	access:default
+source	DeadEvent.java	/^  private final Object source;$/;"	field	line:34	language:Java	class:DeadEvent	file:	access:private
+subscriber	Dispatcher.java	/^      private final Subscriber subscriber;$/;"	field	line:169	language:Java	class:Dispatcher.LegacyAsyncDispatcher.EventWithSubscriber	file:	access:private
+subscriber	SubscriberExceptionContext.java	/^  private final Object subscriber;$/;"	field	line:29	language:Java	class:SubscriberExceptionContext	file:	access:private
+subscriberMethod	SubscriberExceptionContext.java	/^  private final Method subscriberMethod;$/;"	field	line:30	language:Java	class:SubscriberExceptionContext	file:	access:private
+subscriberMethodsCache	SubscriberRegistry.java	/^  private static final LoadingCache<Class<?>, ImmutableList<Method>> subscriberMethodsCache =$/;"	field	line:149	language:Java	class:SubscriberRegistry	file:	access:private
+subscribers	Dispatcher.java	/^      private final Iterator<Subscriber> subscribers;$/;"	field	line:120	language:Java	class:Dispatcher.PerThreadQueuedDispatcher.Event	file:	access:private
+subscribers	EventBus.java	/^  private final SubscriberRegistry subscribers = new SubscriberRegistry(this);$/;"	field	line:104	language:Java	class:EventBus	file:	access:private
+subscribers	SubscriberRegistry.java	/^  private final ConcurrentMap<Class<?>, CopyOnWriteArraySet<Subscriber>> subscribers =$/;"	field	line:64	language:Java	class:SubscriberRegistry	file:	access:private
+target	Subscriber.java	/^  @VisibleForTesting final Object target;$/;"	field	line:48	language:Java	class:Subscriber	access:default
+toString	DeadEvent.java	/^  public String toString() {$/;"	method	line:69	language:Java	class:DeadEvent	access:public
+toString	EventBus.java	/^  public String toString() {$/;"	method	line:220	language:Java	class:EventBus	access:public
+unregister	EventBus.java	/^  public void unregister(Object object) {$/;"	method	line:195	language:Java	class:EventBus	access:public
+unregister	SubscriberRegistry.java	/^  void unregister(Object listener) {$/;"	method	line:95	language:Java	class:SubscriberRegistry	access:default

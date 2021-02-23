@@ -8,6 +8,7 @@ func TestParseMembersMethods(t *testing.T) {
 		args string
 	}{
 		{"name", "../_fixtures/ctags/deadevent.ctags"},
+		{"name", "../_fixtures/ctags/eventbus"},
 	}
 
 	InitDatastore()
