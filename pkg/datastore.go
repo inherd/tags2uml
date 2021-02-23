@@ -1,4 +1,3 @@
-
 //   tags2uml
 //   Copyright 2014 ruben2020 https://github.com/ruben2020/ 
 //
@@ -17,27 +16,24 @@
 package pkg
 
 type memberinfo_st struct {
-   name, access, datatype string
+	name, access, datatype string
 }
 
 type methodinfo_st struct {
-   name, access, returntype string
+	name, access, returntype string
 }
 
-
 type classinfo_st struct {
-   name string
-   id int
-   parents []string
-   members []memberinfo_st
-   methods []methodinfo_st
+	name    string
+	id      int
+	parents []string
+	members []memberinfo_st
+	methods []methodinfo_st
 }
 
 var classmap map[string]classinfo_st
 var idcounter int = 1
 
-
 func InitDatastore() {
-    classmap = make(map[string]classinfo_st)
+	classmap = make(map[string]classinfo_st)
 }
-
