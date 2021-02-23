@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/fdhuang/clone/guava/guava/src/com/google/common/eventbus/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/d532b5c/
+DeadEvent	DeadEvent.java	/^  public DeadEvent(Object source, Object event) {$/;"	method	line:43	language:Java	class:DeadEvent	access:public
+DeadEvent	DeadEvent.java	/^public class DeadEvent {$/;"	class	line:32	language:Java
+com.google.common.eventbus	DeadEvent.java	/^package com.google.common.eventbus;$/;"	package	line:15	language:Java
+event	DeadEvent.java	/^  private final Object event;$/;"	field	line:35	language:Java	class:DeadEvent	file:	access:private
+getEvent	DeadEvent.java	/^  public Object getEvent() {$/;"	method	line:64	language:Java	class:DeadEvent	access:public
+getSource	DeadEvent.java	/^  public Object getSource() {$/;"	method	line:54	language:Java	class:DeadEvent	access:public
+source	DeadEvent.java	/^  private final Object source;$/;"	field	line:34	language:Java	class:DeadEvent	file:	access:private
+toString	DeadEvent.java	/^  public String toString() {$/;"	method	line:69	language:Java	class:DeadEvent	access:public

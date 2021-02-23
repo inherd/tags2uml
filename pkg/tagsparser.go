@@ -53,7 +53,6 @@ func ParseClass(fn string) {
 }
 
 func ParseMembersMethods(fn string) {
-
 	file, err := os.Open(fn)
 	if err != nil {
 		fmt.Println(err)
@@ -99,7 +98,8 @@ func ParseMembersMethods(fn string) {
 			}
 		}
 		thetype := match[4]
-		matcht := ret.FindStringSubmatch(remove_keywords(scanner.Text()))
+		withoutKeywords := remove_keywords(scanner.Text())
+		matcht := ret.FindStringSubmatch(withoutKeywords)
 		datatype := ""
 		if (len(matcht) != 0) && (datatype_supported(matchl[1])) {
 			datatype = matcht[2]
