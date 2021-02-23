@@ -21,6 +21,7 @@ import "flag"
 import "os"
 import "log"
 import "io/ioutil"
+import "github.com/inherd/tags2uml/pkg"
 
 const sw_version string = "v0.01"
 
