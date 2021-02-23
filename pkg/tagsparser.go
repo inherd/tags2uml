@@ -30,7 +30,7 @@ func ParseClass(fn string) {
 
 	scanner := bufio.NewScanner(file)
 	re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+)\t(class|struct)`)
-	re2 := regexp.MustCompile(`inherits:([A-Za-z0-9_\:,]+)`)
+	re2 := regexp.MustCompile(`inherits:([A-Za-z0-9_:,]+)`)
 	for scanner.Scan() {
 		match := re.FindStringSubmatch(scanner.Text())
 		if len(match) != 0 {
@@ -60,11 +60,11 @@ func ParseMembersMethods(fn string) {
 	}
 
 	scanner := bufio.NewScanner(file)
-	re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+)\t([A-Za-z]+)`)
+	re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+.*?")\t([A-Za-z]+)`)
 	rea := regexp.MustCompile(`access:([A-Za-z0-9_]+)`)
-	rec := regexp.MustCompile(`(class|implementation|struct):([A-Za-z0-9_\.]+)`)
-	rel := regexp.MustCompile(`language:([A-Za-z0-9_\#]+)`)
-	ret := regexp.MustCompile(`\/\^([ ]*)([A-Za-z0-9_\.]+)([^A-Za-z0-9_]+)(.*)\$\/`)
+	rec := regexp.MustCompile(`(class|implementation|struct):([A-Za-z0-9_.]+)`)
+	rel := regexp.MustCompile(`language:([A-Za-z0-9_#]+)`)
+	ret := regexp.MustCompile(`/\^([ ]*)([A-Za-z0-9_.]+)([^A-Za-z0-9_]+)(.*)\$/`)
 	for scanner.Scan() {
 		match := re.FindStringSubmatch(scanner.Text())
 		if len(match) == 0 {
