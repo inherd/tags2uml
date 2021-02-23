@@ -74,7 +74,7 @@ func ParseMembersMethods(fn string) {
 		ci := classinfo_st{}
 		var cn string
 		if len(matchc) != 0 {
-			cn = matchc[1]
+			cn = matchc[2]
 		}
 		cnsep := strings.LastIndex(cn, ".")
 		if cnsep != -1 {
@@ -83,7 +83,7 @@ func ParseMembersMethods(fn string) {
 		if len(cn) != 0 {
 			ci = classmap[cn]
 		}
-		if len(ci.name) == 0 {
+        if len(ci.name) == 0 {
 			continue
 		}
 		matcha := rea.FindStringSubmatch(scanner.Text())
