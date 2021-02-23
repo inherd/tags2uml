@@ -31,7 +31,7 @@ if err != nil {
 }
 
 scanner := bufio.NewScanner(file)
-re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+)\tclass`)
+re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+)\t(class|struct)`)
 re2 := regexp.MustCompile(`inherits:([A-Za-z0-9_\:,]+)`)
 for scanner.Scan() {
     match := re.FindStringSubmatch(scanner.Text())
@@ -65,7 +65,7 @@ if err != nil {
 scanner := bufio.NewScanner(file)
 re := regexp.MustCompile(`^([A-Za-z0-9_]+)\t([^\t]+)\t([^\t]+)\t([A-Za-z]+)`)
 rea := regexp.MustCompile(`access:([A-Za-z0-9_]+)`)
-rec := regexp.MustCompile(`class:([A-Za-z0-9_\.]+)`)
+rec := regexp.MustCompile(`(class|implementation|struct):([A-Za-z0-9_\.]+)`)
 rel := regexp.MustCompile(`language:([A-Za-z0-9_\#]+)`)
 ret := regexp.MustCompile(`\/\^([ ]*)([A-Za-z0-9_\.]+)([^A-Za-z0-9_]+)(.*)\$\/`)
 for scanner.Scan() {
@@ -107,7 +107,7 @@ for scanner.Scan() {
         ci.methods = append(ci.methods, methodinfo)
     }
     classmap[ci.name] = ci
-    
+
 }
 
 if err := scanner.Err(); err != nil {
