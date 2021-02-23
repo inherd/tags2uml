@@ -37,7 +37,7 @@ var classmap map[string]classinfo_st
 var idcounter int = 1
 
 
-func init_datastore() {
+func InitDatastore() {
     classmap = make(map[string]classinfo_st)
 }
 

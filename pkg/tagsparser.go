@@ -23,7 +23,7 @@ import "regexp"
 import "strings"
 
 
-func parseClass(fn string) {
+func ParseClass(fn string) {
 
 file, err := os.Open(fn)
 if err != nil {
@@ -55,7 +55,7 @@ if err := scanner.Err(); err != nil {
 }
 
 
-func parseMembersMethods(fn string) {
+func ParseMembersMethods(fn string) {
 
 file, err := os.Open(fn)
 if err != nil {

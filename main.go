@@ -16,44 +16,45 @@
 
 package main
 
-import "fmt"
-import "flag"
+import (
+    "flag"
+    "fmt"
+    "io/ioutil"
+    "log"
+)
 import "os"
-import "log"
-import "io/ioutil"
 import "github.com/inherd/tags2uml/pkg"
-
 const sw_version string = "v0.01"
 
 func main() {
-    init_datastore()
-    parse_options()
-    if help {
-        fmt.Println("The tags file must be created using the ctags option --fields=+latinK")
-        fmt.Println("Usage of ", os.Args[0], ":")
-        flag.PrintDefaults()
-        return
-    } else if ver {
-        print_version()
-        return
-    } else if checkRange() == false {
-        log.Println("Value of members or methods is out of range")
-        flag.PrintDefaults()
-        return
-    } else if fileExists(input_file) == false {
-        log.Fatal("File ", input_file, " does not exist!\nPlease use --help for help\n")
+    pkg.InitDatastore()
+    pkg.Parse_options()
+    if pkg.Help {
+       fmt.Println("The tags file must be created using the ctags option --fields=+latinK")
+       fmt.Println("Usage of ", os.Args[0], ":")
+       flag.PrintDefaults()
+       return
+    } else if pkg.Ver {
+       print_version()
+       return
+    } else if pkg.CheckRange() == false {
+       log.Println("Value of members or methods is out of range")
+       flag.PrintDefaults()
+       return
+    } else if fileExists(pkg.Input_file) == false {
+       log.Fatal("File ", pkg.Input_file, " does not exist!\nPlease use --help for help\n")
     } else {
-        parseClass(input_file)
-        parseMembersMethods(input_file)
-        outs := dotmake()
-        if (output_file == "-") {
-            fmt.Println(outs)
-        } else {
-            err := ioutil.WriteFile(output_file, []byte(outs), 0644)
-            if err != nil {
-                panic(err)
-            }
-        }
+       pkg.ParseClass(pkg.Input_file)
+       pkg.ParseMembersMethods(pkg.Input_file)
+       outs := pkg.Dotmake()
+       if (pkg.Output_file == "-") {
+           fmt.Println(outs)
+       } else {
+           err := ioutil.WriteFile(pkg.Output_file, []byte(outs), 0644)
+           if err != nil {
+               panic(err)
+           }
+       }
     }
 }
 

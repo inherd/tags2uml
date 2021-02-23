@@ -34,7 +34,7 @@ func getrelations(membrs []memberinfo_st) []int {
     return retval
 }
 
-func dotmake() string {
+func Dotmake() string {
 var outs []string
 var parentstr classinfo_st
 var parenti int

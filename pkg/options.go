@@ -32,28 +32,28 @@ var opt_relationship bool = true
 var opt_methods int = ONLYPUBLIC
 var opt_members int = ONLYPUBLIC
 
-var input_file string = "tags"
-var output_file string = "-"
-var help bool = false
-var ver bool = false
+var Input_file string = "tags"
+var Output_file string = "-"
+var Help bool = false
+var Ver bool = false
 
-func checkRange() bool {
+func CheckRange() bool {
     retval := true
     if (opt_methods < 0)||(opt_methods > 3) {retval = false}
     if (opt_members < 0)||(opt_members > 3) {retval = false}
     return retval
 }
 
-func parse_options() {
+func Parse_options() {
     flag.BoolVar(&opt_blackbox, "blackbox", false, "true for blackbox model, false for whitebox model (default=false)")
     flag.BoolVar(&opt_inherit, "inherit", true, "true to display inheritance info, false to not display (default=true)")
     flag.BoolVar(&opt_relationship, "relations", true, "true to display relationship info, false to not display (default=true)")
     flag.IntVar(&opt_methods, "methods", 2, "0=methods not displayed, 1=all methods, 2=only public (default), 3=only public and protected")
     flag.IntVar(&opt_members, "members", 2, "0=members not displayed, 1=all members, 2=only public (default), 3=only public and protected")
-    flag.StringVar(&input_file, "infile", "tags", "path to input file (default=\"tags\")")
-    flag.StringVar(&output_file, "outfile", "-", "path to output file, use \"-\" for stdout (default=\"-\")")
-    flag.BoolVar(&help, "help", false, "print help message")
-    flag.BoolVar(&ver, "ver", false, "print version")
+    flag.StringVar(&Input_file, "infile", "tags", "path to input file (default=\"tags\")")
+    flag.StringVar(&Output_file, "outfile", "-", "path to output file, use \"-\" for stdout (default=\"-\")")
+    flag.BoolVar(&Help, "help", false, "print help message")
+    flag.BoolVar(&Ver, "ver", false, "print version")
     flag.Parse()
 }
 
